@@ -17,9 +17,8 @@ COPY . model_data /app/
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-
 ## Step 4:
-# Expose port 80
+# Expose port 8000
 
 EXPOSE 8000
 
