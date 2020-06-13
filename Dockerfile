@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.7.3-stretch
 
 ## Step 1:
 # Create a working directory
@@ -21,7 +21,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 ## Step 4:
 # Expose port 80
 
-EXPOSE 80
+EXPOSE 8000
 
 ## Step 5:
 # Run app.py at container launch
