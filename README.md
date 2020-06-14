@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/jkimuli/udacity-ml-docker.svg?style=svg)](https://circleci.com/gh/jkimuli/udacity-ml-docker)
 
 ## Project Overview
 
@@ -40,3 +40,9 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Screenshots of running `app.py`
+1. Running Flask app in docker container
+   ![Docker_Screenshot](docker.png)
+2. Running Flask app as a Kubernetes pod in minikube
+   ![Kubernetes_Screenshot](kubernetes_pod.png)   

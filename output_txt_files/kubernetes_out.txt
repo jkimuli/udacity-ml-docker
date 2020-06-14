@@ -1,1 +1,19 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "udacity-ml" already exists
+NAME         READY   STATUS    RESTARTS   AGE
+udacity-ml   1/1     Running   0          85s
+Forwarding from 127.0.0.1:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+
+#Output from terminal running make_prediction.sh
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+

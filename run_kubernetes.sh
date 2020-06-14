@@ -4,19 +4,20 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=jkimuli/udacity-ml
+dockerpath=jkimuli/udacity-ml:latest
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment udacity-minikube --image=$dockerpath:latest
+kubectl run udacity-ml --generator=run-pod/v1 --image=$dockerpath --port=80\
+        --labels app=udacity-ml
 
 
 # Step 3:
 # List kubernetes pods
-kubectl get pod
+kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
 
-kubectl expose deployment udacity-minikube --type=NodePort --port=8000
+kubectl port-forward udacity-ml 8000:80
 
